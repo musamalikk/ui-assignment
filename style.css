@@ -1,5 +1,5 @@
 * {
-  /* margin: 0; */
+  margin: 0;
   font-family: "Jost", sans-serif;
 }
 
@@ -213,6 +213,7 @@
   position: absolute;
   top: 55px;
   width: 100%;
+  padding: 16px 0px;
 }
 
 .banner-title {
@@ -272,6 +273,7 @@
   min-width: 236px;
   min-height: 52px;
   border-radius: 0px !important;
+  font-size: 20px !important;
 }
 
 .btn-main {
@@ -531,6 +533,10 @@
     font-size: 16px !important;
   }
 
+  .font-24 {
+    font-size: 18px !important;
+  }
+
   .font-20 {
     font-size: 18px !important;
   }
@@ -653,7 +659,7 @@
     grid-template-columns: 1fr;
   }
 
-  .blog-read{
+  .blog-read {
     border-bottom: 2px solid var(--main);
     padding-bottom: 10px;
   }
