@@ -286,15 +286,19 @@
 }
 
 .offerings {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
   display: grid;
-  grid-auto-flow: row dense;
+  /* grid-auto-flow: dense; */
   /* grid-auto-rows: 300px; */
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 26px; /* Gap between grid items */
+  grid-gap: 26px;
 }
 
 .offering-card {
   max-width: 300px;
+  width: 100%;
   height: 300px;
   background-color: rgba(162, 184, 193, 0.05);
   margin: 13.5px 0px;
@@ -323,7 +327,7 @@
   /* line-height: 29px;
   letter-spacing: 0.20000000298023224px; */
   text-align: center;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .offering-card .offering-card-description {
@@ -647,6 +651,11 @@
 
   .blogs {
     grid-template-columns: 1fr;
+  }
+
+  .blog-read{
+    border-bottom: 2px solid var(--main);
+    padding-bottom: 10px;
   }
 
   .content-header {
