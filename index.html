@@ -41,9 +41,8 @@
   <body>
     <!-- Banner -->
     <div class="banner">
-      <div class="banner-inner screen-width mx-auto">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="banner-inner screen-width mx-auto my-0">
+        <nav class="navbar navbar-expand-xl navbar-dark p-0">
           <a class="navbar-brand" href="#"
             ><img src="/assets/logo.png" class="logo"
           /></a>
@@ -60,7 +59,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul
-              class="navbar-nav d-flex align-items-center justify-content-end ml-auto"
+              class="navbar-nav d-flex align-items-end justify-content-end ml-auto"
             >
               <li class="nav-item">Home</li>
               <li class="nav-item">Offerings</li>
@@ -74,45 +73,58 @@
           </div>
         </nav>
         <p class="banner-title">How we tranform business to unlock value</p>
-        <button class="btn bg-yellow text-white">Start now</button>
+        <button class="btn bg-yellow font-20 text-white">Start now</button>
       </div>
     </div>
 
     <!-- Body -->
-    <div class="mx-auto screen-width">
-      <!-- About Us -->
-      <div class="row about-us">
-        <div class="col-md-6 about-us-left">
-          <p class="title mb-64">About us</p>
-          <p class="description mb-24">
-            New Vision Softcom & Consultancy, is a hard and smart working IT
-            Services Company, that excels in growing businesses of Small and
-            Medium companies to Enterprise levels, by way of solving Business
-            pain areas with sound technological solutions. We pride ourselves of
-            having delivered successful projects on .NET, Java, Data Analytics,
-            IOT & ERP solutions for almost every vertical locally and
-            globally.....
-          </p>
-          <div class="d-flex justify-content-between">
-            <button class="btn btn-main">Learn more</button>
-            <button class="btn btn-main-outline">Leadership</button>
+    <div class="screen-width screen-padding mx-auto">
+      <!-- About -->
+      <div class="mbo-100">
+        <div class="about-us">
+          <div class="about-us-left">
+            <div class="d-flex">
+              <p class="title mb-64 mx-auto ml-md-0">About us</p>
+            </div>
+            <p class="description mb-24">
+              New Vision Softcom & Consultancy, is a hard and smart working IT
+              Services Company, that excels in growing businesses of Small and
+              Medium companies to Enterprise levels, by way of solving Business
+              pain areas with sound technological solutions. We pride ourselves
+              of having delivered successful projects on .NET, Java, Data
+              Analytics, IOT & ERP solutions for almost every vertical locally
+              and globally.....
+            </p>
+            <div class="d-flex flex-wrap">
+              <button class="btn btn-sm btn-main mr-5">Learn more</button>
+              <button
+                class="btn btn-sm btn-main-outline d-none d-md-block ml-4"
+              >
+                Leadership
+              </button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center justify-md-content-end">
+            <img src="/assets/images/about-us.png" class="about-us-img" />
           </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-end">
-          <img src="/assets/images/about-us.png" class="about-us-img ml-auto" />
+        <div class="d-flex">
+          <button class="d-md-none btn btn-sm btn-main-outline ml-lg-4">
+            Leadership
+          </button>
         </div>
       </div>
 
       <!-- Offerings -->
-      <div class="mb-100">
+      <div class="mbo-100">
         <div
           class="d-flex flex-column justify-content-center align-items-center"
         >
           <p class="title mb-30">Offerings</p>
-          <p class="description mb-64">Services we offer</p>
+          <p class="font-20 font-thin mb-64">Services we offer</p>
         </div>
-        <div class="row mb-100">
-          <div class="col-3">
+        <div class="mb-100 offerings">
+          <div class="">
             <div class="offering-card-tag bg-orange"></div>
             <div class="offering-card">
               <img
@@ -127,7 +139,7 @@
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="">
             <div class="offering-card-tag bg-yellow"></div>
             <div class="offering-card">
               <img
@@ -139,7 +151,7 @@
               <p class="offering-card-description">Microsoft Azure, AWS</p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="">
             <div class="offering-card-tag bg-golden"></div>
             <div class="offering-card">
               <img
@@ -147,13 +159,13 @@
                 class="offering-card-icon"
                 alt=""
               />
-              <p class="card-title text-nowrap">Business Process Management</p>
+              <p class="card-title">Business Process Management</p>
               <p class="offering-card-description">
                 Salesforce, PEGA, Robomagic & UI Path
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="">
             <div class="offering-card-tag bg-slate"></div>
             <div class="offering-card">
               <img
@@ -161,7 +173,7 @@
                 class="offering-card-icon"
                 alt=""
               />
-              <p class="card-title text-nowrap">Enterprise Resource Planning</p>
+              <p class="card-title">Enterprise Resource Planning</p>
               <p class="offering-card-description">
                 Orcale EBS, JD Edwards, NetSuite, ODOO, SAP
               </p>
@@ -174,7 +186,7 @@
       </div>
 
       <!-- Industries -->
-      <div class="mb-100">
+      <div class="mbo-100">
         <div
           class="d-flex flex-column justify-content-center align-items-center"
         >
@@ -182,13 +194,15 @@
           <p class="description mb-64">Services we offer</p>
         </div>
         <div class="d-flex justify-content-between align-items-center">
-          <div class="industries-card-side bg-industries-card-1">
+          <div
+            class="industries-card-side d-none d-xl-block bg-industries-card-1"
+          >
             <div class="bg-industries-card-side-text bg-industries-card-common">
               Business Process Management
             </div>
             <div class="bg-industries-card-side-shade"></div>
           </div>
-          <div class="industries-card-main bg-industries-card-2">
+          <div class="industries-card-main mx-auto bg-industries-card-2">
             <img
               src="/assets/icons/left-arrow.png"
               class="arrow industries-left-arrow industries-arrow-absolute-position"
@@ -201,7 +215,9 @@
               class="arrow industries-right-arrow industries-arrow-absolute-position"
             />
           </div>
-          <div class="industries-card-side bg-industries-card-3">
+          <div
+            class="industries-card-side d-none d-xl-block bg-industries-card-3"
+          >
             <div class="bg-industries-card-side-text bg-industries-card-common">
               Investments
             </div>
@@ -211,35 +227,51 @@
       </div>
 
       <!-- Partners -->
-      <div class="mb-100">
+      <div class="mbo-100">
         <p class="title mb-30 text-center">Partners</p>
-        <p class="description text-center mb-80">
+        <p class="font-20 text-center mb-80">
           At NewVision, strategic partnesrships are one of the core pillars of
           our business strategy. We have a 360 degree relationship with our
           partners and our approach is aimed at delivering unparalled value to
           our clients. Both NewVision and the partners share common set of
           cultureal values and drive common business onjectives
         </p>
-        <img src="/assets/images/partners.png" class="partners-img" />
+        <div class="d-none d-md-block">
+          <img src="/assets/images/partners.png" class="partners-img" />
+        </div>
+        <div class="d-md-none mb-5">
+          <img
+            src="/assets/images/partners-sm-1.png"
+            alt=""
+            class="partners-img"
+          />
+        </div>
+        <div class="d-md-none">
+          <img
+            src="/assets/images/partners-sm-2.png"
+            alt=""
+            class="partners-img"
+          />
+        </div>
       </div>
 
       <!-- Testimonials -->
-      <div class="mb-100">
+      <div class="mbo-100">
         <div
           class="d-flex flex-column justify-content-center align-items-center"
         >
           <p class="title mb-30">Testimonials</p>
-          <div class="mb-30 d-flex">
-            <p class="light-description tab">Client Say's</p>
-            <p class="light-description px-4">Video Testimonials</p>
+          <div class="mb-30 d-none d-md-flex">
+            <p class="color-light font-20 tab mb-0">Client Say's</p>
+            <p class="color-light font-20 px-4">Video Testimonials</p>
           </div>
-          <p class="light-description mb-64 mt-3">
+          <p class="mb-64 mt-md-3 font-20 color-light font-thin">
             Hear it from the Industry Leaders
           </p>
         </div>
-        <div class="row mb-100">
-          <div class="col-4">
-            <div class="testimonials-card">
+        <div class="mb-100 testimonials">
+          <div class="d-none d-md-block">
+            <div class="testimonials-card ml-auto">
               <div class="px-5 pt-4 pb-5 testimonial-start">
                 <div class="d-flex align-items-center mb-24">
                   <img src="/assets/icons/inverted.png" class="icon mr-4" />
@@ -249,7 +281,7 @@
                   <img src="/assets/icons/star.png" class="color-yellow icon" />
                   <img src="/assets/icons/star.png" class="color-yellow icon" />
                 </div>
-                <p class="light-description-sm">
+                <p class="font-thin font-16 color-light text-center">
                   NewVision provided great service, appropriate architecture and
                   prompt response to issue at a reasonable rate. Their team was
                   professional and always had a can-do attitude despite our
@@ -266,7 +298,7 @@
                     src="/assets/images/Ellipse 9.png"
                     class="icon-lg mb-2"
                   />
-                  <p class="description card-title text-white mb-2">
+                  <p class="font-bold font-20 text-center text-white mb-2">
                     CIO, U.S.Based Corporate Wellness Company
                   </p>
                   <div class="text-white">
@@ -279,8 +311,8 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="testimonials-card">
+          <div class="">
+            <div class="testimonials-card mx-auto mr-lg-auto">
               <div class="px-5 pt-4 pb-5 testimonial-start">
                 <div class="d-flex align-items-center mb-24">
                   <img src="/assets/icons/inverted.png" class="icon mr-4" />
@@ -290,7 +322,7 @@
                   <img src="/assets/icons/star.png" class="color-yellow icon" />
                   <img src="/assets/icons/star.png" class="color-yellow icon" />
                 </div>
-                <p class="light-description-sm">
+                <p class="font-16 color-light font-thin text-center">
                   NI would like to take my hats off for one of the best tean
                   that I have worked with. Asim Noise, Anmol, and their team
                   members were exceptional in supporting , analyzing , and
@@ -320,7 +352,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="d-none d-lg-block">
             <div class="testimonials-card">
               <div class="px-5 pt-4 pb-5 testimonial-start">
                 <div class="d-flex align-items-center mb-24">
@@ -331,7 +363,7 @@
                   <img src="/assets/icons/star.png" class="color-yellow icon" />
                   <img src="/assets/icons/star.png" class="color-yellow icon" />
                 </div>
-                <p class="light-description-sm">
+                <p class="font-thin font-16 color-light text-center">
                   NewVision has done an excellent job in SAP implementation and
                   integration with our POS. We really see value from our
                   investements and the partner
@@ -365,17 +397,19 @@
       </div>
 
       <!-- Blogs -->
-      <div class="mb-100">
-        <div class="row align-items-center mb-100">
-          <div class="col-4"></div>
-          <div class="col-4"><p class="title text-center">Blogs</p></div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
+      <div class="mbo-100">
+        <div class="content-header align-items-center mb-64">
+          <div class="d-none d-md-flex"></div>
+          <div class="mx-auto">
+            <p class="title text-center">Blogs</p>
+          </div>
+          <div class="d-none d-md-flex justify-content-end align-items-start">
             <button class="btn btn-main-outline">Show all >></button>
           </div>
         </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="card">
+        <div class="blogs">
+          <div class="mx-auto">
+            <div class="card blog-card">
               <img
                 class="card-img-top"
                 src="/assets/images/industries3.png"
@@ -397,10 +431,10 @@
                 </div>
               </div>
             </div>
-            <div class="bg-orange h-10"></div>
+            <div class="bg-orange h-10 blog-card"></div>
           </div>
-          <div class="col-6">
-            <div class="card">
+          <div class="d-none d-lg-block">
+            <div class="card blog-card">
               <img
                 class="card-img-top"
                 src="/assets/images/industries1.png"
@@ -421,61 +455,75 @@
                 </div>
               </div>
             </div>
-            <div class="bg-yellow h-10"></div>
+            <div class="bg-yellow h-10 blog-card"></div>
           </div>
+        </div>
+        <div class="d-flex pt-100">
+          <button class="d-md-none btn btn-main-outline ml-lg-4 mx-auto">
+            Show all >>
+          </button>
         </div>
       </div>
 
       <!-- News -->
-      <div class="mb-100">
-        <div class="row align-items-center mb-100">
-          <div class="col-4"></div>
-          <div class="col-4"><p class="title text-center">News</p></div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
+      <div class="mbo-100">
+        <div
+          class="content-header align-items-center align-md-items-start mb-100"
+        >
+          <div class="d-none d-md-flex"></div>
+          <div class="mx-auto">
+            <p class="title text-center">News</p>
+          </div>
+          <div class="d-none d-md-flex justify-content-end align-items-center">
             <button class="btn btn-main-outline">Show all >></button>
           </div>
         </div>
-        <div class="d-flex mb-64">
+        <div class="d-flex align-items-center mb-64">
           <img src="/assets/images/news1.png" class="card-sm" />
           <div
-            class="d-flex justify-content-between flex-column mx-3 px-5 py-2"
+            class="d-flex justify-content-between flex-column mx-3 px-md-5 py-md-2"
           >
             <p class="font-36 font-semibold">
               NewVisions continues hiring even during the pandemic due to
               increased repeat business
             </p>
-            <p class="font-36 font-thin">10 September, 2021</p>
+            <p class="font-36 font-thin mb-0">10 September, 2021</p>
           </div>
         </div>
-        <div class="d-flex">
+        <div class="d-flex align-items-center">
           <img src="/assets/images/news2.png" class="card-sm" />
           <div
-            class="d-flex justify-content-between flex-column mx-3 px-5 py-2"
+            class="d-flex justify-content-between flex-column mx-3 px-md-5 py-md-2"
           >
             <p class="font-36 font-semibold">
               NewVision successfully completed delivery of Oracle Utilities
               Solution for a major international electricity and water company
             </p>
-            <p class="font-36 font-thin">03 September, 2021</p>
+            <p class="font-36 font-thin mb-0">03 September, 2021</p>
           </div>
+        </div>
+        <div class="d-flex pt-100">
+          <button class="d-md-none btn btn-main-outline ml-lg-4 mx-auto">
+            Show all >>
+          </button>
         </div>
       </div>
 
       <!-- Featured Events -->
-      <div class="mb-100">
-        <div class="row align-items-center mb-100">
-          <div class="col-4"></div>
-          <div class="col-4">
-            <p class="title text-center">Featured Events</p>
+      <div class="mbo-100">
+        <div class="content-header align-items-center mb-100">
+          <div class="d-none d-md-flex"></div>
+          <div class="mx-auto">
+            <p class="title text-center mx-auto">Featured Events</p>
           </div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
+          <div class="d-none d-md-flex justify-content-end align-items-center">
             <button class="btn btn-main-outline">Show all >></button>
           </div>
         </div>
         <div class="d-flex mb-64">
           <img src="/assets/images/event1.png" class="card-sm" />
           <div
-            class="d-flex justify-content-between flex-column mx-3 px-5 py-2"
+            class="d-flex justify-content-between flex-column mx-3 px-md-5 py-md-2"
           >
             <p class="font-36 font-semibold">
               Comprehensive Healthcare Management for insurance & healthcare
@@ -487,7 +535,7 @@
         <div class="d-flex">
           <img src="/assets/images/event2.png" class="card-sm" />
           <div
-            class="d-flex justify-content-between flex-column mx-3 px-5 py-2"
+            class="d-flex justify-content-between flex-column mx-3 px-md-5 py-md-2"
           >
             <p class="font-36 font-semibold">
               Webinar - Transforming Utilities (Water, Gas , Power) with RPA
@@ -495,6 +543,11 @@
             </p>
             <p class="font-36 font-thin">03 December, 2021</p>
           </div>
+        </div>
+        <div class="d-flex pt-100">
+          <button class="d-md-none btn btn-main-outline ml-lg-4 mx-auto">
+            Show all >>
+          </button>
         </div>
       </div>
 
@@ -504,84 +557,93 @@
           class="d-flex flex-column justify-content-center align-items-center"
         >
           <p class="title mb-30">Contact Us</p>
-          <p class="description mb-64">
+          <p class="description text-center color-light mb-64">
             Questions ? We will put you on the right path.
           </p>
         </div>
-        <div class="row">
-          <div class="col-5">
-            <div class="card shadow rounded-lg p-5">
+        <div class="contact-us">
+          <div class="">
+            <div class="card shadow rounded-lg p-5 contact-us-form mx-auto">
               <p class="card-title mb-5">Contact Us</p>
-              <form action="" method="post" class="d-flex flex-column">
+              <form action="" method="post" class="">
                 <input
                   type="text"
                   name="name"
                   id=""
-                  class="input-field"
+                  class="input-field w-100"
                   placeholder="Your Name"
                 />
                 <input
                   type="text"
                   name="email"
                   id=""
-                  class="input-field"
+                  class="input-field w-100"
                   placeholder="Your Email"
                 />
                 <textarea
                   name="message"
                   rows="4"
-                  class="input-field"
+                  class="input-field w-100"
                   placeholder="Your Message"
                 ></textarea>
-                <button type="submit" class="btn btn-main">Send</button>
+                <button type="submit" class="btn btn-sm btn-main">Send</button>
               </form>
             </div>
           </div>
-          <div class="col-7 d-flex flex-column justify-content-around">
-            <div class="row">
-              <div class="col-4">
+          <div
+            class=" d-flex flex-column justify-content-around"
+          >
+            <div class="contact-us-inner">
+              <div class="d-flex mx-auto">
                 <div
-                  class="d-flex flex-column justify-content-center align-items-center"
+                class="d-flex flex-column justify-content-center align-items-center"
                 >
                   <i
-                    class="fa-sharp fa-solid fa-location-dot fa-2x color-main mb-24"
+                    class="fa-sharp fa-solid fa-location-dot fa-2x color-main mb-4 mb-md-1"
                   ></i>
-                  <p class="light-description-sm">
+                  <div class="mb-24 d-none d-xl-block"></div>
+                  <p class="font-16 ml-4 font-thin color-light mb-0">
                     602, Pentagon Tower 1, Magarpatla City, Hadapsar, Pune India
                   </p>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="">
                 <div
                   class="d-flex flex-column justify-content-center align-items-center"
                 >
                   <i
                     class="fa-solid fa-mobile-screen fa-2x color-main mb-24"
                   ></i>
-                  <p class="light-description-sm">+91 8956001836</p>
+                  <p class="font-16 font-thin color-light">+91 8956001836</p>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="">
                 <div
                   class="d-flex flex-column justify-content-center align-items-center"
                 >
                   <i
                     class="fa-sharp fa-regular fa-envelope fa-2x color-main mb-24"
                   ></i>
-                  <p class="light-description-sm">
+                  <p class="font-16 font-thin color-light">
                     contact@newvisionsoftware.in
                   </p>
                 </div>
               </div>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
+            <div
+              class="d-none d-md-flex justify-content-center align-items-center"
+            >
               <img src="/assets/images/map.png" class="map" />
             </div>
-            <div>
-              <i class="fa-brands fa-twitter fa-2x color-main mr-3"></i>
-              <i class="fa-brands fa-square-facebook fa-2x color-main mr-3"></i>
-              <i class="fa-brands fa-linkedin fa-2x color-main"></i>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+              <p class="font-24 font-bold mb-2 d-sm-none">Follow us</p>
+              <p class="description mb-30 d-sm-none">Follow us on</p>
             </div>
+              <div class="d-flex align-items-center justify-content-center align-items-md-start justify-content-md-start">
+                <i class="fa-brands fa-twitter fa-2x color-main mr-3"></i>
+                <i class="fa-brands fa-square-facebook fa-2x color-main mr-3"></i>
+                <i class="fa-brands fa-linkedin fa-2x color-main"></i>
+              </div>
           </div>
         </div>
       </div>
@@ -589,56 +651,76 @@
 
     <!-- Footer -->
     <div class="bg-main">
-      <div class="row container mx-auto text-white text-white py-5">
-        <div class="col-3">
+      <div class="footer container mx-auto text-white text-white py-5">
+        <div>
           <div class="d-flex flex-column justify-content-center">
-            <p class="card-title text-left">Our Offerings</p>
-            <p class="light-description mb-24">Software Product Engineering</p>
-            <p class="light-description mb-24">Business Process management</p>
-            <p class="light-description mb-24">Cloud</p>
-            <p class="light-description mb-24">DevOps</p>
-            <p class="light-description mb-24">QA Automation</p>
-            <p class="light-description mb-24">Data</p>
-            <p class="light-description">Utilities</p>
+            <p class="card-title text-left">
+              Our Offerings<span class="ml-4 d-md-none">v</span>
+            </p>
+            <div class="d-none d-md-block">
+              <p class="font-thin font-16 mb-24">
+                Software Product Engineering
+              </p>
+              <p class="font-thin font-16 mb-24">Business Process management</p>
+              <p class="font-thin font-16 mb-24">Cloud</p>
+              <p class="font-thin font-16 mb-24">DevOps</p>
+              <p class="font-thin font-16 mb-24">QA Automation</p>
+              <p class="font-thin font-16 mb-24">Data</p>
+              <p class="font-thin font-16">Utilities</p>
+            </div>
           </div>
         </div>
-        <div class="col-3">
+        <div>
           <div>
-            <p class="card-title text-left">Industries</p>
-            <p class="light-description mb-24">Insurance</p>
-            <p class="light-description mb-24">Financial Services</p>
-            <p class="light-description mb-24">Energy</p>
-            <p class="light-description mb-24">Healthcare</p>
-            <p class="light-description mb-24">Telecom</p>
-            <p class="light-description">Government</p>
+            <p class="card-title text-left">
+              Industries<span class="ml-4 d-md-none">v</span>
+            </p>
+            <div class="d-none d-md-block">
+              <p class="font-thin font-16 mb-24">Insurance</p>
+              <p class="font-thin font-16 mb-24">Financial Services</p>
+              <p class="font-thin font-16 mb-24">Energy</p>
+              <p class="font-thin font-16 mb-24">Healthcare</p>
+              <p class="font-thin font-16 mb-24">Telecom</p>
+              <p class="font-thin font-16">Government</p>
+            </div>
           </div>
         </div>
-        <div class="col-3">
+        <div>
           <div>
-            <p class="card-title text-left">Resources</p>
-            <p class="light-description mb-24">Events</p>
-            <p class="light-description mb-24">Blog</p>
-            <p class="light-description mb-24">Newsroom</p>
-            <p class="light-description mb-24">Articles</p>
-            <p class="light-description">Case Studies</p>
+            <p class="card-title text-left">
+              Resources<span class="ml-4 d-md-none">v</span>
+            </p>
+            <div class="d-none d-md-block">
+              <p class="font-thin font-16 mb-24">Events</p>
+              <p class="font-thin font-16 mb-24">Blog</p>
+              <p class="font-thin font-16 mb-24">Newsroom</p>
+              <p class="font-thin font-16 mb-24">Articles</p>
+              <p class="font-thin font-16">Case Studies</p>
+            </div>
           </div>
         </div>
-        <div class="col-3">
+        <div>
           <div>
-            <p class="card-title text-left">Company</p>
-            <p class="light-description mb-24">About Us</p>
-            <p class="light-description mb-24">Leadership</p>
-            <p class="light-description mb-24">People and Culture</p>
-            <p class="light-description mb-24">Terms and conditions</p>
-            <p class="light-description">Sitemap</p>
+            <p class="card-title text-left">
+              Company<span class="ml-4 d-md-none">v</span>
+            </p>
+            <div class="d-none d-md-block">
+              <p class="font-thin font-16 mb-24">About Us</p>
+              <p class="font-thin font-16 mb-24">Leadership</p>
+              <p class="font-thin font-16 mb-24">People and Culture</p>
+              <p class="font-thin font-16 mb-24">Terms and conditions</p>
+              <p class="font-thin font-16">Sitemap</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="bg-footer d-flex align-items-center justify-content-center">
-      <p class="mb-0 text-white py-3">
-        Copyright <span class="mx-3">©</span> 2021 - New Vision Softcom &
-        Consultancy Pvt. Ltd
+      <p class="mb-0 text-white py-3 d-flex justify-content-start align-md-items-center">
+        <span class="d-none d-md-flex">Copyright </span>
+        <span class="mx-3">©</span>
+        <span class="d-none d-md-flex">2021 - New Vision Softcom &
+          Consultancy Pvt. Ltd</span></span>
       </p>
     </div>
   </body>
